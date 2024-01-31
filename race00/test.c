@@ -1,34 +1,56 @@
 #include "mx_printchar.c"
+#define N 9
+#define SHIFT_UPPER_BACK (N / 2 + 1)
+#define HORIZONTAL_LENGTH (2 * N)
+#define DIAGONAL_LENGTH (N / 2)
+#define VERTICAL_LENGTH N
 
 void mx_printchar(char c);
 
 void horizontal_line(int n) {
     mx_printchar('+');
-    for (int i = 0; i < 2 * n; i++) {
+    for (int i = 0; i < HORIZONTAL_LENGTH; i++) {
         mx_printchar('-');
     }
     mx_printchar('+');
 }
 
+void print_front_side_row() {
+    mx_printchar('|');
+    for (int j = 0; j < HORIZONTAL_LENGTH; j++) {
+        mx_printchar(' ');
+    }
+    mx_printchar('|');
+}
+
+void print_lowe_side(int row) {
+    int start_side_idx = HORIZONTAL_LENGTH + 1; 
+    int end_side_idx = start_side_idx + VERTICAL_LENGTH - row - 1;
+    for (int i = start_side_idx; i < end_side_idx; i++) {
+        mx_printchar(' ');
+    }
+    mx_printchar('/');
+}
+
 int main() {
-    int n = 4;
+    int n = N;
 
     if (n <= 1) {
         return -1;
     }
 
-    for (int i = 0; i < n / 2 + 1; i++) {
+    for (int i = 0; i < SHIFT_UPPER_BACK; i++) {
         mx_printchar(' ');
     }
     horizontal_line(n);
     mx_printchar('\n');
 
-    for (int i = 0; i < n / 2; i++) {
-        for (int j = 0; j < n / 2 - i; j++) {
+    for (int i = 0; i < DIAGONAL_LENGTH; i++) {
+        for (int j = 0; j < DIAGONAL_LENGTH - i; j++) {
             mx_printchar(' ');
         }
         mx_printchar('/');
-        for (int j = 0; j < 2 * n; j++) {
+        for (int j = 0; j < HORIZONTAL_LENGTH; j++) {
             mx_printchar(' ');
         }
         mx_printchar('/');
@@ -40,36 +62,30 @@ int main() {
         mx_printchar('\n');
     }
 
-    horizontal_line(n);
-    for (int j = 0; j < n / 2; j++) {
+    horizontal_line(n); // UPPER_FRONT HORIZONTAL
+    for (int j = 0; j < DIAGONAL_LENGTH; j++) {
         mx_printchar(' ');
     }
     mx_printchar('|');
     mx_printchar('\n');
 
-    for (int i = 0; i < n; i++) {
-        mx_printchar('|');
-        for (int j = 0; j < 2 * n; j++) {
-            mx_printchar(' ');
-        }
-        mx_printchar('|');
+    for (int row = 0; row < VERTICAL_LENGTH; row++) {
+        print_front_side_row();
 
-        if (i == n / 2 - 1 ) {
-            for (int j = 0; j < n / 2 ; j++) {
-                mx_printchar(' ');
-            }
-            mx_printchar('+');
-        } else if (i > n / 2 - 1) {
-            int k = n / 2;
-            for (int j = k - 1; j > i - k; j--) {
-                mx_printchar(' ');
-            }
-            mx_printchar('/');
-        } else {
-            for (int j = 0; j < n / 2; j++) {
+        int back_corner_vertical_index = VERTICAL_LENGTH - DIAGONAL_LENGTH - 1;
+
+        if (row < back_corner_vertical_index) {
+            for (int j = 0; j < DIAGONAL_LENGTH; j++) {
                 mx_printchar(' ');
             }
             mx_printchar('|');
+        } else if (row == back_corner_vertical_index) {
+            for (int j = 0; j < DIAGONAL_LENGTH; j++) {
+                mx_printchar(' ');
+            }
+            mx_printchar('+');
+        } else {
+            print_lowe_side(row);
         }
         mx_printchar('\n');
     }
@@ -79,3 +95,4 @@ int main() {
 
     return 0;
 }
+
