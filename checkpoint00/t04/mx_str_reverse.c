@@ -1,5 +1,3 @@
-#include <unistd.h>
-
 void mx_str_reverse(char *s){
     int last = 0;
     while(s[last] != '\0') {

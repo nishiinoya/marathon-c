@@ -1,8 +1,9 @@
 #include <unistd.h>
 
 void mx_printint(int n) {
-    if (n == 0) write(1, "0", 1);
-        
+    if (n == 0)
+        write(1, "0", 1);
+
     if (n < 0) {
         write(1, "-", 1);
         n = -n;
@@ -32,8 +33,4 @@ void mx_printint(int n) {
         write(1, &temp, 1);
         j--;
     }
-}
-
-int main(void) {
-    mx_printint(-2147483648);
 }
