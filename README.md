@@ -1,5 +1,5 @@
 # Marathon in C from Ucode-Connect in NTU "KhPI"
-<div align="center">
+
 | Name           | Description | Grade |
 | :-------------:|:-----------:|:-----:|
 | spint00        |             |  84   |
@@ -21,4 +21,4 @@
 | race01         |             |       |
 | race02         |             |       |
 | race03         |             |       |
-</div>
+
