@@ -1,7 +1,7 @@
 # Marathon in C from Ucode-Connect in NTU "KhPI"
 
 | Name           | Description | Grade |
-| -------------- | ----------- | ----- |
+| :-------------:|:-----------:|:-----:|
 | spint00        |             |  84   |
 | spint01        |             |  98   |
 | spint02        |             |  100  |
