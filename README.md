@@ -19,9 +19,9 @@ The 'Grade' represents the harmonious blend of **Peer-to-Peer** evaluations and 
 | spint09        | Makefile, macros, standard error, function pointers                      |       |
 | spint10        | File I/O. Standard input and output                                      |       |
 | spint11        | Linked list                                                              |       |
-| checkpoint00   | Challenge yourself without internet, peers, notes, books or any other third-party help. | 100 |
-| checkpoint01   | Challenge yourself without internet, peers, notes, books or any other third-party help. |     |
-| checkpoint02   | Challenge yourself without internet, peers, notes, books or any other third-party help. |     |
+| checkpoint00   | Challenge yourself without internet, peers, notes, books or any other third-party help | 100 |
+| checkpoint01   | Challenge yourself without internet, peers, notes, books or any other third-party help |     |
+| checkpoint02   | Challenge yourself without internet, peers, notes, books or any other third-party help |     |
 | race00         | Representation of 3d cube and pyramid on the standard output            | 100   |
 | race01         | Decode encrypted math expression                                        |       |
 | race02         | Find the shortest path in the maze between the entry and exit points    |       |
