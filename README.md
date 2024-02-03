@@ -2,7 +2,7 @@
   
 # Marathon in C from Ucode-Connect
 
-The 'Grade' represents the harmonious blend of **Peer-to-Peer** evaluations and the insights derived from the automated machine **Oracle**, providing a comprehensive and balanced assessment."
+The 'Grade' represents the harmonious blend of **Peer-to-Peer** evaluations and the insights derived from the automated machine **Oracle**, providing a comprehensive and balanced assessment
 
 
 | Name           | Description                                                              | Grade |
