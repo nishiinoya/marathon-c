@@ -1,7 +1,12 @@
-# Marathon in C from Ucode-Connect in NTU "KhPI"
+<div align="center">
+  
+# Marathon in C from Ucode-Connect
 
-| Name           | Description                                                            | Grade |
-| :-------------:|:----------------------------------------------------------------------:|:-----:|
+The 'Grade' represents the harmonious blend of **Peer-to-Peer** evaluations and the insights derived from the automated machine **Oracle**, providing a comprehensive and balanced assessment."
+
+
+| Name           | Description                                                              | Grade |
+| :-------------:|:----------------------------------------------------------------------:  |:-----:|
 | spint00        | The basics of UNIX systems (shell, terminal, UNIX utilities, git, etc)   |  84   |
 | spint01        | The basics of writing code in C (loops, variables, functions, etc)       |  98   |
 | spint02        | Standard functions and the basics of mathematics implementation in C     |  100  |
@@ -21,3 +26,5 @@
 | race01         | Decode encrypted math expression                                        |       |
 | race02         | Find the shortest path in the maze between the entry and exit points    |       |
 | race03         | Simulate the Matrix screensaver                                         |       |
+
+</div>
