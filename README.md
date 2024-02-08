@@ -12,7 +12,7 @@ The 'Grade' represents the harmonious blend of **Peer-to-Peer** evaluations and 
 | spint02        | Standard functions and the basics of mathematics implementation in C     |  100  |
 | spint03        | Pointers in C and more complex algorithms                                |  98   |
 | spint04        | Arrays and derivative from them                                          |  88   |
-| spint05        | Simple programs and command-line arguments                               |       |
+| spint05        | Simple programs and command-line arguments                               |  99   |
 | spint06        | Own library and sorting algorithms                                       |       |
 | spint07        | Memory allocation and memory management                                  |       |
 | spint08        | Header files and structures                                              |       |
