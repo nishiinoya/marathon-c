@@ -14,7 +14,7 @@ The 'Grade' represents the harmonious blend of **Peer-to-Peer** evaluations and 
 | spint04        | Arrays and derivative from them                                          |  88   |
 | spint05        | Simple programs and command-line arguments                               |  99   |
 | spint06        | Own library and sorting algorithms                                       |  100  |
-| spint07        | Memory allocation and memory management                                  |       |
+| spint07        | Memory allocation and memory management                                  |  82   |
 | spint08        | Header files and structures                                              |       |
 | spint09        | Makefile, macros, standard error, function pointers                      |       |
 | spint10        | File I/O. Standard input and output                                      |       |
