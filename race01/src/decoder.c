@@ -106,7 +106,7 @@ void check(char *operation, char *op1, char *op2, char *res) {
         }
     }
     if (*operation == '/') {
-        if (o1 / o2 == r) {
+        if (o1 / o2 == r && o2 != 0) {
             mx_printint(o1);
             mx_printstr(" / ");
             mx_printint(o2);
