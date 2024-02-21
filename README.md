@@ -23,7 +23,7 @@ The 'Grade' represents the harmonious blend of **Peer-to-Peer** evaluations and 
 | checkpoint01   | Challenge yourself without internet, peers, notes, books or any other third-party help | 112 |
 | checkpoint02   | Challenge yourself without internet, peers, notes, books or any other third-party help |     |
 | race00         | Representation of 3d cube and pyramid on the standard output            | 100   |
-| race01         | Decode encrypted math expression                                        |       |
+| race01         | Decode encrypted math expression                                        |  53   |
 | race02         | Find the shortest path in the maze between the entry and exit points    |       |
 | race03         | Simulate the Matrix screensaver                                         |       |
 
