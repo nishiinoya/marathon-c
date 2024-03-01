@@ -1,15 +1,17 @@
-void mx_printchar(char c);
+#include <unistd.h>
 
 void mx_printint(int n) {
-    if (n == 0) {
-        mx_printchar('0');
-        return;
-    }
+    if (n == 0)
+        write(1, "0", 1);
+
     if (n < 0) {
-        mx_printchar('-');
+        write(1, "-", 1);
         n = -n;
     }
-
+    if (n == -2147483648) {
+        write(1, "2147483648", 11);
+        return;
+    }
     int n_1 = n;
     int size = 0;
     while (n_1 != 0) {
@@ -27,7 +29,8 @@ void mx_printint(int n) {
 
     int j = i - 1;
     while (j >= 0) {
-        mx_printchar(array[j] + 48);
+        int temp = array[j] + 48;
+        write(1, &temp, 1);
         j--;
-    }    
+    }
 }

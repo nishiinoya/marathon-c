@@ -1,5 +1,16 @@
 #include "../inc/header.h"
 
+int mx_strlen(const char *s) {
+    int i = 0;
+    while (s[i] != '\0') {
+        i++;
+    }
+    return i;
+}
+void mx_printerr(const char *s) {
+    write(2, s, mx_strlen(s));
+}
+
 int main(int argc, char *argv[]) {
     if (argc != 2){
         mx_printerr("usage: ./read_file [file_path]\n");
@@ -15,7 +26,7 @@ int main(int argc, char *argv[]) {
 
     while (read(file_open, &c, 1) > 0) {
 
-        mx_printchar(c);
+        write(1, &c, 1);
     }
 
     close(file_open);

@@ -1,11 +1,10 @@
 #include "file_to_str.h"
 
 char *mx_strcat(char *s1, const char *s2) {
-    int s1_len = mx_strlen(s1);
-    int s2_len = mx_strlen(s2);
-    for (int i = 0; i < s2_len; i++) {
-        s1[s1_len + i] = s2[i];
+    int counter = mx_strlen(s1);
+    for (int j = 0; counter < mx_strlen(s1) + mx_strlen(s2); j++) {
+        s1[counter] = s2[j];
+        counter++;
     }
-    s1[s1_len + s2_len] = '\0';
     return s1;
 }

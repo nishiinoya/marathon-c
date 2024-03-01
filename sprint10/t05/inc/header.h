@@ -17,7 +17,8 @@ typedef struct s_agent {
     int strength;
 }
 t_agent;
-bool mx_isdigit(int c) ;
+bool mx_isdigit(int c);
+void mx_printint(int n);
 int mx_strcmp(const char *s1, const char *s2);
 int mx_strncmp(const char *s1, const char *s2, int n);
 char *mx_strcpy(char *dst, const char *src);

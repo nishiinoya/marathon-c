@@ -1,4 +1,23 @@
-#include "../inc/header.h"
+#include "../inc/list.h"
+
+bool mx_isspace(char c) {
+    if (c == ' ' ||
+        c == '\t' || c == '\n' ||
+        c == '\v' || c == '\f' ||
+        c == '\r') {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+bool mx_isdigit(int c) {
+    if (c >= 48 && c <= 57) {
+        return 1;
+    } else {
+        return 0;
+    }
+}
 
 int mx_atoi(const char *str) {
     int result = 0;

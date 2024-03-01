@@ -1,4 +1,4 @@
-void mx_printchar(char c);
+#include "../inc/list.h"
 
 void mx_printint(int n) {
     if (n == 0) {
@@ -9,6 +9,7 @@ void mx_printint(int n) {
         mx_printchar('-');
         n = -n;
     }
+
     int n_1 = n;
     int size = 0;
     while (n_1 != 0) {

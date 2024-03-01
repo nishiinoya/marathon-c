@@ -1,14 +1,16 @@
-NAME := read_file
+name := read_file
 
-all: $(NAME)
+all: $(name)
 
-$(NAME):
-	clang -std=c11 -Wall -Wextra -Werror -Wpedantic -Iinc -o $(name) src/*.c
+$(name):
+	clang -std=c11 -Wall -Wextra -Werror -Wpedantic src/*.c -o $(name)
 
 clean:
-	rm -rf $(NAME)
+	rm -f $(name)
 
 uninstall:
-	rm -rf $(NAME)
+	rm -f $(name)
 
-reinstall: uninstall $(NAME)
+reinstall:
+	make uninstall
+	make

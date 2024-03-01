@@ -4,28 +4,29 @@ char *mx_file_to_str(const char *filename) {
     if (filename == NULL) {
         return NULL;
     }
-    int check = open(filename, O_RDONLY);
-    if (check < 0) {
+    int file_op = open(filename, O_RDONLY);
+    if (file_op < 0) {
         return NULL;
     }
-    int length = 0;
-    char buf;
-    while (read(check, &buf, 1)) {
-        length++;
+    int len = 0;
+    char buffer;
+    while (read(file_op, &buffer, 1)) {
+        len++;
     }
-    if (close(check) < 0) {
+    if (close(file_op) < 0) {
         return NULL;
     }
-    check = open(filename, O_RDONLY);
-    if (check < 0) {
+    file_op = open(filename, O_RDONLY);
+    if (file_op < 0) {
         return NULL;
     }
-    char *str = mx_strnew(length);
-    for (int i = 0; read(check, &buf, 1); i++) {
-        str[i] = buf;
+    char *file_str = mx_strnew(len);
+    for (int i = 0; read(file_op, &buffer, 1); i++) {
+        file_str[i] = buffer;
     }
-    if (close(check) < 0) {
+
+    if (close(file_op) < 0) {
         return NULL;
     }
-    return str;
+    return file_str;
 }

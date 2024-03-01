@@ -29,5 +29,5 @@ void mx_printint(int n) {
     while (j >= 0) {
         mx_printchar(array[j] + 48);
         j--;
-    }
+    }    
 }
