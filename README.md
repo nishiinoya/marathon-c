@@ -17,14 +17,14 @@ The 'Grade' represents the harmonious blend of **Peer-to-Peer** evaluations and 
 | spint07        | Memory allocation and memory management                                  |  82   |
 | spint08        | Header files and structures                                              |  87   |
 | spint09        | Makefile, macros, standard error, function pointers                      |  82   |
-| spint10        | File I/O. Standard input and output                                      |       |
-| spint11        | Linked list                                                              |       |
+| spint10        | File I/O. Standard input and output                                      |  90   |
+| spint11        | Linked list                                                              |  90   |
 | checkpoint00   | Challenge yourself without internet, peers, notes, books or any other third-party help | 100 |
 | checkpoint01   | Challenge yourself without internet, peers, notes, books or any other third-party help | 112 |
-| checkpoint02   | Challenge yourself without internet, peers, notes, books or any other third-party help |     |
+| checkpoint02   | Challenge yourself without internet, peers, notes, books or any other third-party help | 115 |
 | race00         | Representation of 3d cube and pyramid on the standard output            | 100   |
 | race01         | Decode encrypted math expression                                        |  53   |
-| race02         | Find the shortest path in the maze between the entry and exit points    |       |
-| race03         | Simulate the Matrix screensaver                                         |       |
+| race02         | Find the shortest path in the maze between the entry and exit points    |   0   |
+| race03         | Simulate the Matrix screensaver                                         |  100  |
 
 </div>
