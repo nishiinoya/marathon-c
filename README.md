@@ -1,8 +1,17 @@
-<div align="center">
+
   
 # Marathon in C from Ucode-Connect
 
-The 'Grade' represents the harmonious blend of **Peer-to-Peer** evaluations and the insights derived from the automated machine **Oracle**, providing a comprehensive and balanced assessment
+The **Marathon in C** was a challenging month-long journey of learning and implementing various tasks in the C programming language. Organized by the Innovation Campus at NTU "KhPI," this program pushed participants to develop their coding skills through a series of intense coding exercises and teamwork.
+
+### Structure:
+- **Sprints**: These were individual tasks that tested our understanding of core C concepts, requiring focus and problem-solving skills.
+- **Races**: These were collaborative tasks completed in teams of 2 or 3, where teamwork and coordination were crucial to success.
+- **Checkpoints**: Self-checking moments where we reviewed our progress, ensuring that we were on track with our learning and task completion.
+
+### Grading:
+Our performance was evaluated by an automatic grading system called **Oracle**, which provided immediate feedback and scores on our code.
+<div align="center">
 
 
 | Name           | Description                                                              | Grade |
